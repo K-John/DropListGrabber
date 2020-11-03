@@ -1,0 +1,30 @@
+{
+	"name": "Drop List Grabber - By BigShot",
+	"version": "0.9",
+	"description": "Grab drop lists from OSRS wiki and format the output to fit Fluxious' syntax.",
+	"homepage_url": "https://K-John.net",
+	"permissions": [
+		"activeTab",
+		"storage"
+	],
+	"content_scripts": [{
+		"js": ["js/itemlist.js", "js/npclist.js", "js/droplistgrabber.js", "content.js"],
+		"matches": ["https://oldschool.runescape.wiki/*"]
+	}],
+	"browser_action": {
+		"default_popup": "popup/index.html",
+		"default_icon": {
+			"16": "img/icon-16.png",
+			"32": "img/icon-32.png",
+			"48": "img/icon-48.png",
+			"128": "img/icon-128.png"
+		}
+	},
+	"icons": {
+		"16": "img/icon-16.png",
+		"32": "img/icon-32.png",
+		"48": "img/icon-48.png",
+		"128": "img/icon-128.png"
+	},
+	"manifest_version": 2
+}
